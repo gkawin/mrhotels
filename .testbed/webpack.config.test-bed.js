@@ -10,11 +10,6 @@ const BASE = path.resolve(__dirname)
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
   entry: path.resolve(BASE, 'test-entry.js'),
-  output: {
-    path: path.join(BASE, 'build/test-assets'),
-    filename: 'test.bundle.js',
-    devtoolModuleFilenameTemplate: '[absolute-resource-path]',
-  },
   plugins: [
     // Enzyme
     new webpack.IgnorePlugin(/react\/lib\/(?:ExecutionEnvironment|ReactContext)/),

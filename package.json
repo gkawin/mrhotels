@@ -10,7 +10,7 @@
     "test": "nwb test",
     "test:watch": "nwb test --server",
     "storybook": "start-storybook -p 3007 -c .storybook",
-    "dev:test": "./node_modules/.bin/test-bed -p 3011 -c .testbed/webpack.config.test-bed.js",
+    "dev:test": "NODE_ENV=test test-bed -p 3011 -c .testbed/webpack.config.test-bed.js",
     "lint": "eslint src"
   },
   "dependencies": {
